@@ -1,0 +1,52 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+	<persistence-unit name="projetoBleach"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>br.edu.unifei.bd.bleach.Alma</class>
+		<class>br.edu.unifei.bd.bleach.Armamento</class>
+		<class>br.edu.unifei.bd.bleach.ArmamentoEspiritual</class>
+		<class>br.edu.unifei.bd.bleach.Arrancar</class>
+		<class>br.edu.unifei.bd.bleach.Bankai</class>
+		<class>br.edu.unifei.bd.bleach.Cidade</class>
+		<class>br.edu.unifei.bd.bleach.Deserto</class>
+		<class>br.edu.unifei.bd.bleach.Fenda</class>
+		<class>br.edu.unifei.bd.bleach.Habilidade</class>
+		<class>br.edu.unifei.bd.bleach.Hollow</class>
+		<class>br.edu.unifei.bd.bleach.HuecoMundo</class>
+		<class>br.edu.unifei.bd.bleach.Humano</class>
+		<class>br.edu.unifei.bd.bleach.Local</class>
+		<class>br.edu.unifei.bd.bleach.Mundo</class>
+		<class>br.edu.unifei.bd.bleach.MundoFisico</class>
+		<class>br.edu.unifei.bd.bleach.Organizacao</class>
+		<class>br.edu.unifei.bd.bleach.Raca</class>
+		<class>br.edu.unifei.bd.bleach.Ser</class>
+		<class>br.edu.unifei.bd.bleach.Shinigami</class>
+		<class>br.edu.unifei.bd.bleach.Shinkai</class>
+		<class>br.edu.unifei.bd.bleach.SoulSociety</class>
+		<class>br.edu.unifei.bd.bleach.Zanpakuto</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/bleach?zeroDateTimeBehavior=convertToNull" />
+				
+			<property name="javax.persistence.jdbc.user" value="bleach" />
+			
+			<property name="javax.persistence.jdbc.driver"
+				value="org.mariadb.jdbc.Driver" />
+			
+			<property name="javax.persistence.jdbc.password"
+				value="bleach" />
+			
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MariaDBDialect" />
+			
+			<property
+				name="javax.persistence.schema-generation.database.action"
+				value="none" />
+		</properties>
+		
+	</persistence-unit>
+</persistence>
